@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>使用CSS控制图片示例</title>
+    <style>
+      .image {
+            width: 300px;
+            height: 240px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+        }
+      .image:nth-child(1) {
+            float: left;
+        }
+      .image:nth-child(2) {
+            float: left;
+            clear: both;
+        }
+      .image:nth-child(3) {
+            float: right;
+        }
+      .image:nth-child(4) {
+            float: right;
+            clear: both;
+        }
+        @media (max - width: 600px) {
+          .image {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="story.text">初见</a>
+    <a href="https://www.bilibili.com/video/BV1t1fdYdE3F?spm_id_from=333.1007.tianma.2-1-4.click">相识</a>
+    <video src="1.mp4" controls autoplay muted>哪吒</video>
+    <img class="image" src="img/1.png" alt="示例图片">
+    <img class="image" src="img/2.png" alt="示例图片">
+    <img class="image" src="img/3.png" alt="示例图片">
+    <img class="image" src="img/4.png" alt="示例图片">
+</body>
+
+</html>
